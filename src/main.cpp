@@ -1,31 +1,43 @@
+#include <boost/asio.hpp>
 #include <iostream>
 
-#include "orderbook/Order.h"
+#include "engine/Exchange.h"
+#include "network/TcpServer.h"
 
 int main()
 {
     try
     {
-        Order order1(
-            1,
-            Side::BUY,
-            OrderType::LIMIT,
-            100,
-            150);
+        boost::asio::io_context ioContext;
 
-        Order order2(
-            2,
-            Side::SELL,
-            OrderType::MARKET,
-            50);
+        Exchange exchange;
 
-        std::cout << order1 << std::endl;
-        std::cout << order2 << std::endl;
+        constexpr unsigned short PORT = 9090;
+
+        TcpServer server(
+            ioContext,
+            PORT,
+            exchange);
+
+        std::cout
+            << "=====================================\n"
+            << "        OPTIMUMDAQ EXCHANGE\n"
+            << "=====================================\n"
+            << "Listening on port "
+            << PORT
+            << "...\n\n";
+
+        ioContext.run();
     }
-    catch (const std::exception& ex)
+    catch (const std::exception& e)
     {
-        std::cout << ex.what() << std::endl;
+        std::cerr
+            << "Fatal Error: "
+            << e.what()
+            << '\n';
+
+        return EXIT_FAILURE;
     }
 
-    return 0;
+    return EXIT_SUCCESS;
 }

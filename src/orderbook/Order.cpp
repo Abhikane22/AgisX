@@ -54,7 +54,20 @@ void Order::print() const
 {
     std::cout << *this << std::endl;
 }
+void Order::reduceQuantity(Quantity qty)
+{
+    if (qty > remainingQuantity)
+    {
+        throw std::runtime_error("Order quantity underflow.");
+    }
 
+    remainingQuantity -= qty;
+}
+
+bool Order::filled() const
+{
+    return remainingQuantity == 0;
+}
 std::ostream& operator<<(std::ostream& os, const Order& order)
 {
     os << "Order { ";

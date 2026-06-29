@@ -1,20 +1,107 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(OPTIMUMDAQ)
-
+project(
+    optimumDaq
+    VERSION 1.0
+    LANGUAGES CXX
+)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(
-    OPTIMUMDAQ
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+find_package(Boost REQUIRED)
+
+set(SOURCES
 
     src/main.cpp
 
     src/orderbook/Order.cpp
+    src/orderbook/Limit.cpp
+    src/orderbook/Trade.cpp
+    src/orderbook/OrderBook.cpp
+
+    src/MatchingEngine/MatchingEngine.cpp
+
+    src/engine/Exchange.cpp
+
+    src/network/MessageParser.cpp
+    src/network/Session.cpp
+    src/network/TcpServer.cpp
+)
+
+add_executable(
+    optimumdaq
+    ${SOURCES}
 )
 
 target_include_directories(
-    OPTIMUMDAQ
+    optimumdaq
     PRIVATE
-    src
+        src
 )
+
+target_link_libraries(
+    optimumdaq
+    PRIVATE
+        Boost::headers
+)
+set(TEST_SOURCES
+
+    src/tests/TestRunner.cpp
+    src/tests/TestUtils.cpp
+
+    src/tests/OrderTests.cpp
+    src/tests/LimitTests.cpp
+    src/tests/OrderBookTests.cpp
+    src/tests/MatchingEngineTests.cpp
+    src/tests/ExchangeTests.cpp
+    src/tests/MessageParserTests.cpp
+
+    src/orderbook/Order.cpp
+    src/orderbook/Limit.cpp
+    src/orderbook/Trade.cpp
+    src/orderbook/OrderBook.cpp
+
+    src/MatchingEngine/MatchingEngine.cpp
+
+    src/engine/Exchange.cpp
+
+    src/network/MessageParser.cpp
+    src/network/Session.cpp
+    src/network/TcpServer.cpp
+)
+set(BENCHMARK_SOURCES
+
+    src/benchmark/main.cpp
+    src/benchmark/Benchmark.cpp
+
+    src/orderbook/Order.cpp
+    src/orderbook/Limit.cpp
+    src/orderbook/Trade.cpp
+    src/orderbook/OrderBook.cpp
+
+    src/MatchingEngine/MatchingEngine.cpp
+
+    src/engine/Exchange.cpp
+)
+add_executable(
+    optimumdaq_benchmark
+    ${BENCHMARK_SOURCES}
+    # optimumdaq_client
+    # src/client/main.cpp
+    # src/client/Client.cpp
+)
+
+target_include_directories(
+    #optimumdaq_client
+    optimumdaq_benchmark
+    PRIVATE
+        src
+)
+
+# target_link_libraries(
+#     optimumdaq_client
+#     PRIVATE
+#         Boost::headers
+# )

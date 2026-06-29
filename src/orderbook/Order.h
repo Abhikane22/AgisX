@@ -37,6 +37,7 @@ struct Order
     // -------- Parent Price Level ---------------
     Limit* parent = nullptr;
 
+
     // Constructor
     Order(
         OrderId id,
@@ -47,6 +48,9 @@ struct Order
 
     // Debug utility
     void print() const;
+    void reduceQuantity(Quantity qty);
+
+    bool filled() const;
 };
 
 // Stream output operator

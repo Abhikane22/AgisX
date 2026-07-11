@@ -48,15 +48,17 @@ Session::processMessage(
     {
     case MessageType::PLACE_ORDER:
     {
-        auto trades =
-            exchange.placeOrder(
-                message.symbol,
-                std::move(message.order));
+        auto result =
+        exchange.placeOrder(
+            message.symbol,
+            std::move(message.order));
 
         response =
-            "Trades: " +
-            std::to_string(trades.size());
-
+            "Order Accepted\n"
+            "Order ID: " +
+            std::to_string(result.orderId) +
+            "\nTrades: " +
+            std::to_string(result.trades.size());
         break;
     }
 

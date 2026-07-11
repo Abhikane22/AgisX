@@ -37,7 +37,7 @@ Exchange::findEngine(
 
     return &it->second;
 }
-std::vector<Trade>
+OrderResult
 Exchange::placeOrder(
     const std::string& symbol,
     std::unique_ptr<Order> order)
@@ -51,14 +51,25 @@ Exchange::placeOrder(
     MatchingEngine& engine =
         getOrCreateEngine(symbol);
 
+    order->id = nextOrderId++;
+
+    OrderResult result;
+    result.orderId = order->id;
+
     if (order->type == OrderType::LIMIT)
     {
-        return engine.placeLimitOrder(
-            std::move(order));
+        result.trades =
+            engine.placeLimitOrder(
+                std::move(order));
+    }
+    else
+    {
+        result.trades =
+            engine.placeMarketOrder(
+                std::move(order));
     }
 
-    return engine.placeMarketOrder(
-        std::move(order));
+    return result;
 }
 bool
 Exchange::cancelOrder(

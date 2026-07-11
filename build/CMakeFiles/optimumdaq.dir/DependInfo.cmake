@@ -9,7 +9,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/abhijeet777/Abhijeet/optimumDaq/src/MatchingEngine/MatchingEngine.cpp" "CMakeFiles/optimumdaq.dir/src/MatchingEngine/MatchingEngine.cpp.o" "gcc" "CMakeFiles/optimumdaq.dir/src/MatchingEngine/MatchingEngine.cpp.o.d"
+  "/Users/abhijeet777/Abhijeet/optimumDaq/src/api/HttpServer.cpp" "CMakeFiles/optimumdaq.dir/src/api/HttpServer.cpp.o" "gcc" "CMakeFiles/optimumdaq.dir/src/api/HttpServer.cpp.o.d"
+  "/Users/abhijeet777/Abhijeet/optimumDaq/src/api/HttpSession.cpp" "CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.o" "gcc" "CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.o.d"
   "/Users/abhijeet777/Abhijeet/optimumDaq/src/engine/Exchange.cpp" "CMakeFiles/optimumdaq.dir/src/engine/Exchange.cpp.o" "gcc" "CMakeFiles/optimumdaq.dir/src/engine/Exchange.cpp.o.d"
+  "/Users/abhijeet777/Abhijeet/optimumDaq/src/logging/Logger.cpp" "CMakeFiles/optimumdaq.dir/src/logging/Logger.cpp.o" "gcc" "CMakeFiles/optimumdaq.dir/src/logging/Logger.cpp.o.d"
   "/Users/abhijeet777/Abhijeet/optimumDaq/src/main.cpp" "CMakeFiles/optimumdaq.dir/src/main.cpp.o" "gcc" "CMakeFiles/optimumdaq.dir/src/main.cpp.o.d"
   "/Users/abhijeet777/Abhijeet/optimumDaq/src/network/MessageParser.cpp" "CMakeFiles/optimumdaq.dir/src/network/MessageParser.cpp.o" "gcc" "CMakeFiles/optimumdaq.dir/src/network/MessageParser.cpp.o.d"
   "/Users/abhijeet777/Abhijeet/optimumDaq/src/network/Session.cpp" "CMakeFiles/optimumdaq.dir/src/network/Session.cpp.o" "gcc" "CMakeFiles/optimumdaq.dir/src/network/Session.cpp.o.d"

@@ -3,6 +3,8 @@
 
 #include "engine/Exchange.h"
 #include "network/TcpServer.h"
+#include "logging/Logger.h"
+#include "api/HttpServer.h"
 
 int main()
 {
@@ -18,7 +20,12 @@ int main()
             ioContext,
             PORT,
             exchange);
+        constexpr unsigned short HTTP_PORT = 8080;
 
+        HttpServer httpServer(
+            ioContext,
+            HTTP_PORT,
+            exchange);
         std::cout
             << "=====================================\n"
             << "        OPTIMUMDAQ EXCHANGE\n"
@@ -26,6 +33,12 @@ int main()
             << "Listening on port "
             << PORT
             << "...\n\n";
+        Logger::info(
+    "Exchange server started on port " +
+    std::to_string(PORT));
+            Logger::info(
+    "HTTP server started on port " +
+    std::to_string(HTTP_PORT));
 
         ioContext.run();
     }

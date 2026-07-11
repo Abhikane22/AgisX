@@ -28,6 +28,10 @@ set(SOURCES
     src/network/MessageParser.cpp
     src/network/Session.cpp
     src/network/TcpServer.cpp
+    src/logging/Logger.cpp
+
+    src/api/HttpServer.cpp
+    src/api/HttpSession.cpp
 )
 
 add_executable(
@@ -70,6 +74,8 @@ set(TEST_SOURCES
     src/network/MessageParser.cpp
     src/network/Session.cpp
     src/network/TcpServer.cpp
+
+    src/logging/Logger.cpp
 )
 set(BENCHMARK_SOURCES
 
@@ -84,6 +90,8 @@ set(BENCHMARK_SOURCES
     src/MatchingEngine/MatchingEngine.cpp
 
     src/engine/Exchange.cpp
+
+    src/logging/Logger.cpp
 )
 add_executable(
     optimumdaq_benchmark

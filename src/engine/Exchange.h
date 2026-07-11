@@ -8,7 +8,7 @@
 #include "../MatchingEngine/MatchingEngine.h"
 #include "../orderbook/Order.h"
 #include "../orderbook/Trade.h"
-
+#include "OrderResult.h"
 class Exchange
 {
 public:
@@ -16,11 +16,10 @@ public:
     Exchange() = default;
 
     // Route an order to the corresponding matching engine.
-    std::vector<Trade>
+    OrderResult
     placeOrder(
         const std::string& symbol,
         std::unique_ptr<Order> order);
-
     // Cancel an existing order.
     bool
     cancelOrder(
@@ -44,7 +43,8 @@ public:
     const std::vector<Trade>&
     tradeHistory(
         const std::string& symbol) const;
-
+private:
+    OrderId nextOrderId = 1;
 private:
 
     // Creates a matching engine if one does not exist.

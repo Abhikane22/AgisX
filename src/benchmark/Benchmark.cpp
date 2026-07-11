@@ -7,7 +7,7 @@
 
 #include "../engine/Exchange.h"
 #include "../orderbook/Order.h"
-
+const std::string symbol = "AAPL";
 namespace
 {
     constexpr int NUM_ORDERS = 100000;
@@ -56,12 +56,12 @@ void Benchmark::run()
             quantity,
             price);
 
-    auto trades =
-        exchange.placeOrder(
-            "AAPL",
-            std::move(order));
+    auto result =
+    exchange.placeOrder(
+        symbol,
+        std::move(order));
 
-    tradesExecuted += trades.size();
+    tradesExecuted += result.trades.size();
 }
 
     auto end =

@@ -212,6 +212,48 @@ CMakeFiles/optimumdaq.dir/src/network/TcpServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/optimumdaq.dir/src/network/TcpServer.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/abhijeet777/Abhijeet/optimumDaq/src/network/TcpServer.cpp -o CMakeFiles/optimumdaq.dir/src/network/TcpServer.cpp.s
 
+CMakeFiles/optimumdaq.dir/src/logging/Logger.cpp.o: CMakeFiles/optimumdaq.dir/flags.make
+CMakeFiles/optimumdaq.dir/src/logging/Logger.cpp.o: /Users/abhijeet777/Abhijeet/optimumDaq/src/logging/Logger.cpp
+CMakeFiles/optimumdaq.dir/src/logging/Logger.cpp.o: CMakeFiles/optimumdaq.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/optimumdaq.dir/src/logging/Logger.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/optimumdaq.dir/src/logging/Logger.cpp.o -MF CMakeFiles/optimumdaq.dir/src/logging/Logger.cpp.o.d -o CMakeFiles/optimumdaq.dir/src/logging/Logger.cpp.o -c /Users/abhijeet777/Abhijeet/optimumDaq/src/logging/Logger.cpp
+
+CMakeFiles/optimumdaq.dir/src/logging/Logger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/optimumdaq.dir/src/logging/Logger.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/abhijeet777/Abhijeet/optimumDaq/src/logging/Logger.cpp > CMakeFiles/optimumdaq.dir/src/logging/Logger.cpp.i
+
+CMakeFiles/optimumdaq.dir/src/logging/Logger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/optimumdaq.dir/src/logging/Logger.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/abhijeet777/Abhijeet/optimumDaq/src/logging/Logger.cpp -o CMakeFiles/optimumdaq.dir/src/logging/Logger.cpp.s
+
+CMakeFiles/optimumdaq.dir/src/api/HttpServer.cpp.o: CMakeFiles/optimumdaq.dir/flags.make
+CMakeFiles/optimumdaq.dir/src/api/HttpServer.cpp.o: /Users/abhijeet777/Abhijeet/optimumDaq/src/api/HttpServer.cpp
+CMakeFiles/optimumdaq.dir/src/api/HttpServer.cpp.o: CMakeFiles/optimumdaq.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/optimumdaq.dir/src/api/HttpServer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/optimumdaq.dir/src/api/HttpServer.cpp.o -MF CMakeFiles/optimumdaq.dir/src/api/HttpServer.cpp.o.d -o CMakeFiles/optimumdaq.dir/src/api/HttpServer.cpp.o -c /Users/abhijeet777/Abhijeet/optimumDaq/src/api/HttpServer.cpp
+
+CMakeFiles/optimumdaq.dir/src/api/HttpServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/optimumdaq.dir/src/api/HttpServer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/abhijeet777/Abhijeet/optimumDaq/src/api/HttpServer.cpp > CMakeFiles/optimumdaq.dir/src/api/HttpServer.cpp.i
+
+CMakeFiles/optimumdaq.dir/src/api/HttpServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/optimumdaq.dir/src/api/HttpServer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/abhijeet777/Abhijeet/optimumDaq/src/api/HttpServer.cpp -o CMakeFiles/optimumdaq.dir/src/api/HttpServer.cpp.s
+
+CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.o: CMakeFiles/optimumdaq.dir/flags.make
+CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.o: /Users/abhijeet777/Abhijeet/optimumDaq/src/api/HttpSession.cpp
+CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.o: CMakeFiles/optimumdaq.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.o -MF CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.o.d -o CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.o -c /Users/abhijeet777/Abhijeet/optimumDaq/src/api/HttpSession.cpp
+
+CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/abhijeet777/Abhijeet/optimumDaq/src/api/HttpSession.cpp > CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.i
+
+CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/abhijeet777/Abhijeet/optimumDaq/src/api/HttpSession.cpp -o CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.s
+
 # Object files for target optimumdaq
 optimumdaq_OBJECTS = \
 "CMakeFiles/optimumdaq.dir/src/main.cpp.o" \
@@ -223,7 +265,10 @@ optimumdaq_OBJECTS = \
 "CMakeFiles/optimumdaq.dir/src/engine/Exchange.cpp.o" \
 "CMakeFiles/optimumdaq.dir/src/network/MessageParser.cpp.o" \
 "CMakeFiles/optimumdaq.dir/src/network/Session.cpp.o" \
-"CMakeFiles/optimumdaq.dir/src/network/TcpServer.cpp.o"
+"CMakeFiles/optimumdaq.dir/src/network/TcpServer.cpp.o" \
+"CMakeFiles/optimumdaq.dir/src/logging/Logger.cpp.o" \
+"CMakeFiles/optimumdaq.dir/src/api/HttpServer.cpp.o" \
+"CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.o"
 
 # External object files for target optimumdaq
 optimumdaq_EXTERNAL_OBJECTS =
@@ -238,9 +283,12 @@ optimumdaq: CMakeFiles/optimumdaq.dir/src/engine/Exchange.cpp.o
 optimumdaq: CMakeFiles/optimumdaq.dir/src/network/MessageParser.cpp.o
 optimumdaq: CMakeFiles/optimumdaq.dir/src/network/Session.cpp.o
 optimumdaq: CMakeFiles/optimumdaq.dir/src/network/TcpServer.cpp.o
+optimumdaq: CMakeFiles/optimumdaq.dir/src/logging/Logger.cpp.o
+optimumdaq: CMakeFiles/optimumdaq.dir/src/api/HttpServer.cpp.o
+optimumdaq: CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.o
 optimumdaq: CMakeFiles/optimumdaq.dir/build.make
 optimumdaq: CMakeFiles/optimumdaq.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable optimumdaq"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable optimumdaq"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/optimumdaq.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

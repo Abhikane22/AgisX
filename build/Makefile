@@ -169,6 +169,54 @@ src/MatchingEngine/MatchingEngine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_benchmark.dir/build.make CMakeFiles/optimumdaq_benchmark.dir/src/MatchingEngine/MatchingEngine.cpp.s
 .PHONY : src/MatchingEngine/MatchingEngine.cpp.s
 
+src/api/HttpServer.o: src/api/HttpServer.cpp.o
+.PHONY : src/api/HttpServer.o
+
+# target to build an object file
+src/api/HttpServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq.dir/build.make CMakeFiles/optimumdaq.dir/src/api/HttpServer.cpp.o
+.PHONY : src/api/HttpServer.cpp.o
+
+src/api/HttpServer.i: src/api/HttpServer.cpp.i
+.PHONY : src/api/HttpServer.i
+
+# target to preprocess a source file
+src/api/HttpServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq.dir/build.make CMakeFiles/optimumdaq.dir/src/api/HttpServer.cpp.i
+.PHONY : src/api/HttpServer.cpp.i
+
+src/api/HttpServer.s: src/api/HttpServer.cpp.s
+.PHONY : src/api/HttpServer.s
+
+# target to generate assembly for a file
+src/api/HttpServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq.dir/build.make CMakeFiles/optimumdaq.dir/src/api/HttpServer.cpp.s
+.PHONY : src/api/HttpServer.cpp.s
+
+src/api/HttpSession.o: src/api/HttpSession.cpp.o
+.PHONY : src/api/HttpSession.o
+
+# target to build an object file
+src/api/HttpSession.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq.dir/build.make CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.o
+.PHONY : src/api/HttpSession.cpp.o
+
+src/api/HttpSession.i: src/api/HttpSession.cpp.i
+.PHONY : src/api/HttpSession.i
+
+# target to preprocess a source file
+src/api/HttpSession.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq.dir/build.make CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.i
+.PHONY : src/api/HttpSession.cpp.i
+
+src/api/HttpSession.s: src/api/HttpSession.cpp.s
+.PHONY : src/api/HttpSession.s
+
+# target to generate assembly for a file
+src/api/HttpSession.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq.dir/build.make CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.s
+.PHONY : src/api/HttpSession.cpp.s
+
 src/benchmark/Benchmark.o: src/benchmark/Benchmark.cpp.o
 .PHONY : src/benchmark/Benchmark.o
 
@@ -243,6 +291,33 @@ src/engine/Exchange.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq.dir/build.make CMakeFiles/optimumdaq.dir/src/engine/Exchange.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_benchmark.dir/build.make CMakeFiles/optimumdaq_benchmark.dir/src/engine/Exchange.cpp.s
 .PHONY : src/engine/Exchange.cpp.s
+
+src/logging/Logger.o: src/logging/Logger.cpp.o
+.PHONY : src/logging/Logger.o
+
+# target to build an object file
+src/logging/Logger.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq.dir/build.make CMakeFiles/optimumdaq.dir/src/logging/Logger.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_benchmark.dir/build.make CMakeFiles/optimumdaq_benchmark.dir/src/logging/Logger.cpp.o
+.PHONY : src/logging/Logger.cpp.o
+
+src/logging/Logger.i: src/logging/Logger.cpp.i
+.PHONY : src/logging/Logger.i
+
+# target to preprocess a source file
+src/logging/Logger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq.dir/build.make CMakeFiles/optimumdaq.dir/src/logging/Logger.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_benchmark.dir/build.make CMakeFiles/optimumdaq_benchmark.dir/src/logging/Logger.cpp.i
+.PHONY : src/logging/Logger.cpp.i
+
+src/logging/Logger.s: src/logging/Logger.cpp.s
+.PHONY : src/logging/Logger.s
+
+# target to generate assembly for a file
+src/logging/Logger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq.dir/build.make CMakeFiles/optimumdaq.dir/src/logging/Logger.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_benchmark.dir/build.make CMakeFiles/optimumdaq_benchmark.dir/src/logging/Logger.cpp.s
+.PHONY : src/logging/Logger.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -461,6 +536,12 @@ help:
 	@echo "... src/MatchingEngine/MatchingEngine.o"
 	@echo "... src/MatchingEngine/MatchingEngine.i"
 	@echo "... src/MatchingEngine/MatchingEngine.s"
+	@echo "... src/api/HttpServer.o"
+	@echo "... src/api/HttpServer.i"
+	@echo "... src/api/HttpServer.s"
+	@echo "... src/api/HttpSession.o"
+	@echo "... src/api/HttpSession.i"
+	@echo "... src/api/HttpSession.s"
 	@echo "... src/benchmark/Benchmark.o"
 	@echo "... src/benchmark/Benchmark.i"
 	@echo "... src/benchmark/Benchmark.s"
@@ -470,6 +551,9 @@ help:
 	@echo "... src/engine/Exchange.o"
 	@echo "... src/engine/Exchange.i"
 	@echo "... src/engine/Exchange.s"
+	@echo "... src/logging/Logger.o"
+	@echo "... src/logging/Logger.i"
+	@echo "... src/logging/Logger.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

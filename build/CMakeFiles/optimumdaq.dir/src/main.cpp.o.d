@@ -1370,5 +1370,9 @@ CMakeFiles/optimumdaq.dir/src/main.cpp.o: \
   /Users/abhijeet777/Abhijeet/optimumDaq/src/engine/../MatchingEngine/../orderbook/Trade.h \
   /Users/abhijeet777/Abhijeet/optimumDaq/src/engine/../orderbook/Order.h \
   /Users/abhijeet777/Abhijeet/optimumDaq/src/engine/../orderbook/Trade.h \
+  /Users/abhijeet777/Abhijeet/optimumDaq/src/engine/OrderResult.h \
+  /Users/abhijeet777/Abhijeet/optimumDaq/src/engine/../core/Types.h \
   /Users/abhijeet777/Abhijeet/optimumDaq/src/network/TcpServer.h \
-  /Users/abhijeet777/Abhijeet/optimumDaq/src/network/../engine/Exchange.h
+  /Users/abhijeet777/Abhijeet/optimumDaq/src/network/../engine/Exchange.h \
+  /Users/abhijeet777/Abhijeet/optimumDaq/src/logging/Logger.h \
+  /Users/abhijeet777/Abhijeet/optimumDaq/src/api/HttpServer.h

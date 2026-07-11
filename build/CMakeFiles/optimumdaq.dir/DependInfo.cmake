@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/abhijeet777/Abhijeet/optimumDaq/src/engine/Exchange.cpp" "CMakeFiles/optimumdaq.dir/src/engine/Exchange.cpp.o" "gcc" "CMakeFiles/optimumdaq.dir/src/engine/Exchange.cpp.o.d"
   "/Users/abhijeet777/Abhijeet/optimumDaq/src/logging/Logger.cpp" "CMakeFiles/optimumdaq.dir/src/logging/Logger.cpp.o" "gcc" "CMakeFiles/optimumdaq.dir/src/logging/Logger.cpp.o.d"
   "/Users/abhijeet777/Abhijeet/optimumDaq/src/main.cpp" "CMakeFiles/optimumdaq.dir/src/main.cpp.o" "gcc" "CMakeFiles/optimumdaq.dir/src/main.cpp.o.d"
+  "/Users/abhijeet777/Abhijeet/optimumDaq/src/marketdata/TradeDispatcher.cpp" "CMakeFiles/optimumdaq.dir/src/marketdata/TradeDispatcher.cpp.o" "gcc" "CMakeFiles/optimumdaq.dir/src/marketdata/TradeDispatcher.cpp.o.d"
   "/Users/abhijeet777/Abhijeet/optimumDaq/src/network/MessageParser.cpp" "CMakeFiles/optimumdaq.dir/src/network/MessageParser.cpp.o" "gcc" "CMakeFiles/optimumdaq.dir/src/network/MessageParser.cpp.o.d"
   "/Users/abhijeet777/Abhijeet/optimumDaq/src/network/Session.cpp" "CMakeFiles/optimumdaq.dir/src/network/Session.cpp.o" "gcc" "CMakeFiles/optimumdaq.dir/src/network/Session.cpp.o.d"
   "/Users/abhijeet777/Abhijeet/optimumDaq/src/network/TcpServer.cpp" "CMakeFiles/optimumdaq.dir/src/network/TcpServer.cpp.o" "gcc" "CMakeFiles/optimumdaq.dir/src/network/TcpServer.cpp.o.d"
@@ -21,6 +22,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/abhijeet777/Abhijeet/optimumDaq/src/orderbook/Order.cpp" "CMakeFiles/optimumdaq.dir/src/orderbook/Order.cpp.o" "gcc" "CMakeFiles/optimumdaq.dir/src/orderbook/Order.cpp.o.d"
   "/Users/abhijeet777/Abhijeet/optimumDaq/src/orderbook/OrderBook.cpp" "CMakeFiles/optimumdaq.dir/src/orderbook/OrderBook.cpp.o" "gcc" "CMakeFiles/optimumdaq.dir/src/orderbook/OrderBook.cpp.o.d"
   "/Users/abhijeet777/Abhijeet/optimumDaq/src/orderbook/Trade.cpp" "CMakeFiles/optimumdaq.dir/src/orderbook/Trade.cpp.o" "gcc" "CMakeFiles/optimumdaq.dir/src/orderbook/Trade.cpp.o.d"
+  "/Users/abhijeet777/Abhijeet/optimumDaq/src/websocket/WebSocketServer.cpp" "CMakeFiles/optimumdaq.dir/src/websocket/WebSocketServer.cpp.o" "gcc" "CMakeFiles/optimumdaq.dir/src/websocket/WebSocketServer.cpp.o.d"
+  "/Users/abhijeet777/Abhijeet/optimumDaq/src/websocket/WebSocketSession.cpp" "CMakeFiles/optimumdaq.dir/src/websocket/WebSocketSession.cpp.o" "gcc" "CMakeFiles/optimumdaq.dir/src/websocket/WebSocketSession.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

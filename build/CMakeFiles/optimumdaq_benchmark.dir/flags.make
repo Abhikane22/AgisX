@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/abhijeet777/Abhijeet/optimumDaq/src
+CXX_INCLUDES = -I/Users/abhijeet777/Abhijeet/optimumDaq/src -isystem /opt/homebrew/include
 
 CXX_FLAGSarm64 = -g -std=c++17 -arch arm64
 

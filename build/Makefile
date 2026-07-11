@@ -343,6 +343,33 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq.dir/build.make CMakeFiles/optimumdaq.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/marketdata/TradeDispatcher.o: src/marketdata/TradeDispatcher.cpp.o
+.PHONY : src/marketdata/TradeDispatcher.o
+
+# target to build an object file
+src/marketdata/TradeDispatcher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq.dir/build.make CMakeFiles/optimumdaq.dir/src/marketdata/TradeDispatcher.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_benchmark.dir/build.make CMakeFiles/optimumdaq_benchmark.dir/src/marketdata/TradeDispatcher.cpp.o
+.PHONY : src/marketdata/TradeDispatcher.cpp.o
+
+src/marketdata/TradeDispatcher.i: src/marketdata/TradeDispatcher.cpp.i
+.PHONY : src/marketdata/TradeDispatcher.i
+
+# target to preprocess a source file
+src/marketdata/TradeDispatcher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq.dir/build.make CMakeFiles/optimumdaq.dir/src/marketdata/TradeDispatcher.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_benchmark.dir/build.make CMakeFiles/optimumdaq_benchmark.dir/src/marketdata/TradeDispatcher.cpp.i
+.PHONY : src/marketdata/TradeDispatcher.cpp.i
+
+src/marketdata/TradeDispatcher.s: src/marketdata/TradeDispatcher.cpp.s
+.PHONY : src/marketdata/TradeDispatcher.s
+
+# target to generate assembly for a file
+src/marketdata/TradeDispatcher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq.dir/build.make CMakeFiles/optimumdaq.dir/src/marketdata/TradeDispatcher.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_benchmark.dir/build.make CMakeFiles/optimumdaq_benchmark.dir/src/marketdata/TradeDispatcher.cpp.s
+.PHONY : src/marketdata/TradeDispatcher.cpp.s
+
 src/network/MessageParser.o: src/network/MessageParser.cpp.o
 .PHONY : src/network/MessageParser.o
 
@@ -523,6 +550,57 @@ src/orderbook/Trade.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_benchmark.dir/build.make CMakeFiles/optimumdaq_benchmark.dir/src/orderbook/Trade.cpp.s
 .PHONY : src/orderbook/Trade.cpp.s
 
+src/websocket/WebSocketServer.o: src/websocket/WebSocketServer.cpp.o
+.PHONY : src/websocket/WebSocketServer.o
+
+# target to build an object file
+src/websocket/WebSocketServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq.dir/build.make CMakeFiles/optimumdaq.dir/src/websocket/WebSocketServer.cpp.o
+.PHONY : src/websocket/WebSocketServer.cpp.o
+
+src/websocket/WebSocketServer.i: src/websocket/WebSocketServer.cpp.i
+.PHONY : src/websocket/WebSocketServer.i
+
+# target to preprocess a source file
+src/websocket/WebSocketServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq.dir/build.make CMakeFiles/optimumdaq.dir/src/websocket/WebSocketServer.cpp.i
+.PHONY : src/websocket/WebSocketServer.cpp.i
+
+src/websocket/WebSocketServer.s: src/websocket/WebSocketServer.cpp.s
+.PHONY : src/websocket/WebSocketServer.s
+
+# target to generate assembly for a file
+src/websocket/WebSocketServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq.dir/build.make CMakeFiles/optimumdaq.dir/src/websocket/WebSocketServer.cpp.s
+.PHONY : src/websocket/WebSocketServer.cpp.s
+
+src/websocket/WebSocketSession.o: src/websocket/WebSocketSession.cpp.o
+.PHONY : src/websocket/WebSocketSession.o
+
+# target to build an object file
+src/websocket/WebSocketSession.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq.dir/build.make CMakeFiles/optimumdaq.dir/src/websocket/WebSocketSession.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_benchmark.dir/build.make CMakeFiles/optimumdaq_benchmark.dir/src/websocket/WebSocketSession.cpp.o
+.PHONY : src/websocket/WebSocketSession.cpp.o
+
+src/websocket/WebSocketSession.i: src/websocket/WebSocketSession.cpp.i
+.PHONY : src/websocket/WebSocketSession.i
+
+# target to preprocess a source file
+src/websocket/WebSocketSession.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq.dir/build.make CMakeFiles/optimumdaq.dir/src/websocket/WebSocketSession.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_benchmark.dir/build.make CMakeFiles/optimumdaq_benchmark.dir/src/websocket/WebSocketSession.cpp.i
+.PHONY : src/websocket/WebSocketSession.cpp.i
+
+src/websocket/WebSocketSession.s: src/websocket/WebSocketSession.cpp.s
+.PHONY : src/websocket/WebSocketSession.s
+
+# target to generate assembly for a file
+src/websocket/WebSocketSession.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq.dir/build.make CMakeFiles/optimumdaq.dir/src/websocket/WebSocketSession.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_benchmark.dir/build.make CMakeFiles/optimumdaq_benchmark.dir/src/websocket/WebSocketSession.cpp.s
+.PHONY : src/websocket/WebSocketSession.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -557,6 +635,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/marketdata/TradeDispatcher.o"
+	@echo "... src/marketdata/TradeDispatcher.i"
+	@echo "... src/marketdata/TradeDispatcher.s"
 	@echo "... src/network/MessageParser.o"
 	@echo "... src/network/MessageParser.i"
 	@echo "... src/network/MessageParser.s"
@@ -578,6 +659,12 @@ help:
 	@echo "... src/orderbook/Trade.o"
 	@echo "... src/orderbook/Trade.i"
 	@echo "... src/orderbook/Trade.s"
+	@echo "... src/websocket/WebSocketServer.o"
+	@echo "... src/websocket/WebSocketServer.i"
+	@echo "... src/websocket/WebSocketServer.s"
+	@echo "... src/websocket/WebSocketSession.o"
+	@echo "... src/websocket/WebSocketSession.i"
+	@echo "... src/websocket/WebSocketSession.s"
 .PHONY : help
 
 

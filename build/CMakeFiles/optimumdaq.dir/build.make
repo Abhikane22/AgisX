@@ -254,6 +254,48 @@ CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/abhijeet777/Abhijeet/optimumDaq/src/api/HttpSession.cpp -o CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.s
 
+CMakeFiles/optimumdaq.dir/src/websocket/WebSocketServer.cpp.o: CMakeFiles/optimumdaq.dir/flags.make
+CMakeFiles/optimumdaq.dir/src/websocket/WebSocketServer.cpp.o: /Users/abhijeet777/Abhijeet/optimumDaq/src/websocket/WebSocketServer.cpp
+CMakeFiles/optimumdaq.dir/src/websocket/WebSocketServer.cpp.o: CMakeFiles/optimumdaq.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/optimumdaq.dir/src/websocket/WebSocketServer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/optimumdaq.dir/src/websocket/WebSocketServer.cpp.o -MF CMakeFiles/optimumdaq.dir/src/websocket/WebSocketServer.cpp.o.d -o CMakeFiles/optimumdaq.dir/src/websocket/WebSocketServer.cpp.o -c /Users/abhijeet777/Abhijeet/optimumDaq/src/websocket/WebSocketServer.cpp
+
+CMakeFiles/optimumdaq.dir/src/websocket/WebSocketServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/optimumdaq.dir/src/websocket/WebSocketServer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/abhijeet777/Abhijeet/optimumDaq/src/websocket/WebSocketServer.cpp > CMakeFiles/optimumdaq.dir/src/websocket/WebSocketServer.cpp.i
+
+CMakeFiles/optimumdaq.dir/src/websocket/WebSocketServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/optimumdaq.dir/src/websocket/WebSocketServer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/abhijeet777/Abhijeet/optimumDaq/src/websocket/WebSocketServer.cpp -o CMakeFiles/optimumdaq.dir/src/websocket/WebSocketServer.cpp.s
+
+CMakeFiles/optimumdaq.dir/src/websocket/WebSocketSession.cpp.o: CMakeFiles/optimumdaq.dir/flags.make
+CMakeFiles/optimumdaq.dir/src/websocket/WebSocketSession.cpp.o: /Users/abhijeet777/Abhijeet/optimumDaq/src/websocket/WebSocketSession.cpp
+CMakeFiles/optimumdaq.dir/src/websocket/WebSocketSession.cpp.o: CMakeFiles/optimumdaq.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/optimumdaq.dir/src/websocket/WebSocketSession.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/optimumdaq.dir/src/websocket/WebSocketSession.cpp.o -MF CMakeFiles/optimumdaq.dir/src/websocket/WebSocketSession.cpp.o.d -o CMakeFiles/optimumdaq.dir/src/websocket/WebSocketSession.cpp.o -c /Users/abhijeet777/Abhijeet/optimumDaq/src/websocket/WebSocketSession.cpp
+
+CMakeFiles/optimumdaq.dir/src/websocket/WebSocketSession.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/optimumdaq.dir/src/websocket/WebSocketSession.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/abhijeet777/Abhijeet/optimumDaq/src/websocket/WebSocketSession.cpp > CMakeFiles/optimumdaq.dir/src/websocket/WebSocketSession.cpp.i
+
+CMakeFiles/optimumdaq.dir/src/websocket/WebSocketSession.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/optimumdaq.dir/src/websocket/WebSocketSession.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/abhijeet777/Abhijeet/optimumDaq/src/websocket/WebSocketSession.cpp -o CMakeFiles/optimumdaq.dir/src/websocket/WebSocketSession.cpp.s
+
+CMakeFiles/optimumdaq.dir/src/marketdata/TradeDispatcher.cpp.o: CMakeFiles/optimumdaq.dir/flags.make
+CMakeFiles/optimumdaq.dir/src/marketdata/TradeDispatcher.cpp.o: /Users/abhijeet777/Abhijeet/optimumDaq/src/marketdata/TradeDispatcher.cpp
+CMakeFiles/optimumdaq.dir/src/marketdata/TradeDispatcher.cpp.o: CMakeFiles/optimumdaq.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/optimumdaq.dir/src/marketdata/TradeDispatcher.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/optimumdaq.dir/src/marketdata/TradeDispatcher.cpp.o -MF CMakeFiles/optimumdaq.dir/src/marketdata/TradeDispatcher.cpp.o.d -o CMakeFiles/optimumdaq.dir/src/marketdata/TradeDispatcher.cpp.o -c /Users/abhijeet777/Abhijeet/optimumDaq/src/marketdata/TradeDispatcher.cpp
+
+CMakeFiles/optimumdaq.dir/src/marketdata/TradeDispatcher.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/optimumdaq.dir/src/marketdata/TradeDispatcher.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/abhijeet777/Abhijeet/optimumDaq/src/marketdata/TradeDispatcher.cpp > CMakeFiles/optimumdaq.dir/src/marketdata/TradeDispatcher.cpp.i
+
+CMakeFiles/optimumdaq.dir/src/marketdata/TradeDispatcher.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/optimumdaq.dir/src/marketdata/TradeDispatcher.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/abhijeet777/Abhijeet/optimumDaq/src/marketdata/TradeDispatcher.cpp -o CMakeFiles/optimumdaq.dir/src/marketdata/TradeDispatcher.cpp.s
+
 # Object files for target optimumdaq
 optimumdaq_OBJECTS = \
 "CMakeFiles/optimumdaq.dir/src/main.cpp.o" \
@@ -268,7 +310,10 @@ optimumdaq_OBJECTS = \
 "CMakeFiles/optimumdaq.dir/src/network/TcpServer.cpp.o" \
 "CMakeFiles/optimumdaq.dir/src/logging/Logger.cpp.o" \
 "CMakeFiles/optimumdaq.dir/src/api/HttpServer.cpp.o" \
-"CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.o"
+"CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.o" \
+"CMakeFiles/optimumdaq.dir/src/websocket/WebSocketServer.cpp.o" \
+"CMakeFiles/optimumdaq.dir/src/websocket/WebSocketSession.cpp.o" \
+"CMakeFiles/optimumdaq.dir/src/marketdata/TradeDispatcher.cpp.o"
 
 # External object files for target optimumdaq
 optimumdaq_EXTERNAL_OBJECTS =
@@ -286,9 +331,12 @@ optimumdaq: CMakeFiles/optimumdaq.dir/src/network/TcpServer.cpp.o
 optimumdaq: CMakeFiles/optimumdaq.dir/src/logging/Logger.cpp.o
 optimumdaq: CMakeFiles/optimumdaq.dir/src/api/HttpServer.cpp.o
 optimumdaq: CMakeFiles/optimumdaq.dir/src/api/HttpSession.cpp.o
+optimumdaq: CMakeFiles/optimumdaq.dir/src/websocket/WebSocketServer.cpp.o
+optimumdaq: CMakeFiles/optimumdaq.dir/src/websocket/WebSocketSession.cpp.o
+optimumdaq: CMakeFiles/optimumdaq.dir/src/marketdata/TradeDispatcher.cpp.o
 optimumdaq: CMakeFiles/optimumdaq.dir/build.make
 optimumdaq: CMakeFiles/optimumdaq.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable optimumdaq"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable optimumdaq"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/optimumdaq.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

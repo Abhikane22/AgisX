@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/optimumdaq_benchmark.dir/src/engine/Exchange.cpp.o.d"
   "CMakeFiles/optimumdaq_benchmark.dir/src/logging/Logger.cpp.o"
   "CMakeFiles/optimumdaq_benchmark.dir/src/logging/Logger.cpp.o.d"
+  "CMakeFiles/optimumdaq_benchmark.dir/src/marketdata/TradeDispatcher.cpp.o"
+  "CMakeFiles/optimumdaq_benchmark.dir/src/marketdata/TradeDispatcher.cpp.o.d"
   "CMakeFiles/optimumdaq_benchmark.dir/src/orderbook/Limit.cpp.o"
   "CMakeFiles/optimumdaq_benchmark.dir/src/orderbook/Limit.cpp.o.d"
   "CMakeFiles/optimumdaq_benchmark.dir/src/orderbook/Order.cpp.o"
@@ -17,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/optimumdaq_benchmark.dir/src/orderbook/OrderBook.cpp.o.d"
   "CMakeFiles/optimumdaq_benchmark.dir/src/orderbook/Trade.cpp.o"
   "CMakeFiles/optimumdaq_benchmark.dir/src/orderbook/Trade.cpp.o.d"
+  "CMakeFiles/optimumdaq_benchmark.dir/src/websocket/WebSocketSession.cpp.o"
+  "CMakeFiles/optimumdaq_benchmark.dir/src/websocket/WebSocketSession.cpp.o.d"
   "optimumdaq_benchmark"
   "optimumdaq_benchmark.pdb"
 )

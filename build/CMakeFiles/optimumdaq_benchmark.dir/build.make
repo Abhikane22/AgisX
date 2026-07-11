@@ -198,6 +198,34 @@ CMakeFiles/optimumdaq_benchmark.dir/src/logging/Logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/optimumdaq_benchmark.dir/src/logging/Logger.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/abhijeet777/Abhijeet/optimumDaq/src/logging/Logger.cpp -o CMakeFiles/optimumdaq_benchmark.dir/src/logging/Logger.cpp.s
 
+CMakeFiles/optimumdaq_benchmark.dir/src/marketdata/TradeDispatcher.cpp.o: CMakeFiles/optimumdaq_benchmark.dir/flags.make
+CMakeFiles/optimumdaq_benchmark.dir/src/marketdata/TradeDispatcher.cpp.o: /Users/abhijeet777/Abhijeet/optimumDaq/src/marketdata/TradeDispatcher.cpp
+CMakeFiles/optimumdaq_benchmark.dir/src/marketdata/TradeDispatcher.cpp.o: CMakeFiles/optimumdaq_benchmark.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/optimumdaq_benchmark.dir/src/marketdata/TradeDispatcher.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/optimumdaq_benchmark.dir/src/marketdata/TradeDispatcher.cpp.o -MF CMakeFiles/optimumdaq_benchmark.dir/src/marketdata/TradeDispatcher.cpp.o.d -o CMakeFiles/optimumdaq_benchmark.dir/src/marketdata/TradeDispatcher.cpp.o -c /Users/abhijeet777/Abhijeet/optimumDaq/src/marketdata/TradeDispatcher.cpp
+
+CMakeFiles/optimumdaq_benchmark.dir/src/marketdata/TradeDispatcher.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/optimumdaq_benchmark.dir/src/marketdata/TradeDispatcher.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/abhijeet777/Abhijeet/optimumDaq/src/marketdata/TradeDispatcher.cpp > CMakeFiles/optimumdaq_benchmark.dir/src/marketdata/TradeDispatcher.cpp.i
+
+CMakeFiles/optimumdaq_benchmark.dir/src/marketdata/TradeDispatcher.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/optimumdaq_benchmark.dir/src/marketdata/TradeDispatcher.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/abhijeet777/Abhijeet/optimumDaq/src/marketdata/TradeDispatcher.cpp -o CMakeFiles/optimumdaq_benchmark.dir/src/marketdata/TradeDispatcher.cpp.s
+
+CMakeFiles/optimumdaq_benchmark.dir/src/websocket/WebSocketSession.cpp.o: CMakeFiles/optimumdaq_benchmark.dir/flags.make
+CMakeFiles/optimumdaq_benchmark.dir/src/websocket/WebSocketSession.cpp.o: /Users/abhijeet777/Abhijeet/optimumDaq/src/websocket/WebSocketSession.cpp
+CMakeFiles/optimumdaq_benchmark.dir/src/websocket/WebSocketSession.cpp.o: CMakeFiles/optimumdaq_benchmark.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/optimumdaq_benchmark.dir/src/websocket/WebSocketSession.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/optimumdaq_benchmark.dir/src/websocket/WebSocketSession.cpp.o -MF CMakeFiles/optimumdaq_benchmark.dir/src/websocket/WebSocketSession.cpp.o.d -o CMakeFiles/optimumdaq_benchmark.dir/src/websocket/WebSocketSession.cpp.o -c /Users/abhijeet777/Abhijeet/optimumDaq/src/websocket/WebSocketSession.cpp
+
+CMakeFiles/optimumdaq_benchmark.dir/src/websocket/WebSocketSession.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/optimumdaq_benchmark.dir/src/websocket/WebSocketSession.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/abhijeet777/Abhijeet/optimumDaq/src/websocket/WebSocketSession.cpp > CMakeFiles/optimumdaq_benchmark.dir/src/websocket/WebSocketSession.cpp.i
+
+CMakeFiles/optimumdaq_benchmark.dir/src/websocket/WebSocketSession.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/optimumdaq_benchmark.dir/src/websocket/WebSocketSession.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/abhijeet777/Abhijeet/optimumDaq/src/websocket/WebSocketSession.cpp -o CMakeFiles/optimumdaq_benchmark.dir/src/websocket/WebSocketSession.cpp.s
+
 # Object files for target optimumdaq_benchmark
 optimumdaq_benchmark_OBJECTS = \
 "CMakeFiles/optimumdaq_benchmark.dir/src/benchmark/main.cpp.o" \
@@ -208,7 +236,9 @@ optimumdaq_benchmark_OBJECTS = \
 "CMakeFiles/optimumdaq_benchmark.dir/src/orderbook/OrderBook.cpp.o" \
 "CMakeFiles/optimumdaq_benchmark.dir/src/MatchingEngine/MatchingEngine.cpp.o" \
 "CMakeFiles/optimumdaq_benchmark.dir/src/engine/Exchange.cpp.o" \
-"CMakeFiles/optimumdaq_benchmark.dir/src/logging/Logger.cpp.o"
+"CMakeFiles/optimumdaq_benchmark.dir/src/logging/Logger.cpp.o" \
+"CMakeFiles/optimumdaq_benchmark.dir/src/marketdata/TradeDispatcher.cpp.o" \
+"CMakeFiles/optimumdaq_benchmark.dir/src/websocket/WebSocketSession.cpp.o"
 
 # External object files for target optimumdaq_benchmark
 optimumdaq_benchmark_EXTERNAL_OBJECTS =
@@ -222,9 +252,11 @@ optimumdaq_benchmark: CMakeFiles/optimumdaq_benchmark.dir/src/orderbook/OrderBoo
 optimumdaq_benchmark: CMakeFiles/optimumdaq_benchmark.dir/src/MatchingEngine/MatchingEngine.cpp.o
 optimumdaq_benchmark: CMakeFiles/optimumdaq_benchmark.dir/src/engine/Exchange.cpp.o
 optimumdaq_benchmark: CMakeFiles/optimumdaq_benchmark.dir/src/logging/Logger.cpp.o
+optimumdaq_benchmark: CMakeFiles/optimumdaq_benchmark.dir/src/marketdata/TradeDispatcher.cpp.o
+optimumdaq_benchmark: CMakeFiles/optimumdaq_benchmark.dir/src/websocket/WebSocketSession.cpp.o
 optimumdaq_benchmark: CMakeFiles/optimumdaq_benchmark.dir/build.make
 optimumdaq_benchmark: CMakeFiles/optimumdaq_benchmark.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable optimumdaq_benchmark"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable optimumdaq_benchmark"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/optimumdaq_benchmark.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

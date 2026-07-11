@@ -830,4 +830,7 @@ CMakeFiles/optimumdaq.dir/src/engine/Exchange.cpp.o: \
   /Users/abhijeet777/Abhijeet/optimumDaq/src/engine/../orderbook/Order.h \
   /Users/abhijeet777/Abhijeet/optimumDaq/src/engine/../orderbook/Trade.h \
   /Users/abhijeet777/Abhijeet/optimumDaq/src/engine/OrderResult.h \
-  /Users/abhijeet777/Abhijeet/optimumDaq/src/engine/../core/Types.h
+  /Users/abhijeet777/Abhijeet/optimumDaq/src/engine/../core/Types.h \
+  /Users/abhijeet777/Abhijeet/optimumDaq/src/engine/../marketdata/TradeDispatcher.h \
+  /Users/abhijeet777/Abhijeet/optimumDaq/src/engine/../marketdata/../orderbook/Trade.h \
+  /Users/abhijeet777/Abhijeet/optimumDaq/src/logging/Logger.h

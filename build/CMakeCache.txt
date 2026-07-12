@@ -28,7 +28,7 @@ CMAKE_AR:FILEPATH=/usr/bin/ar
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=Debug
+CMAKE_BUILD_TYPE:STRING=
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -222,8 +222,32 @@ CMAKE_TAPI:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/tapi
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Path to a file.
+MYSQL_CONCPP_INCLUDE_DIR:PATH=/opt/homebrew/Cellar/mysql-connector-c++/9.7.0/include
+
+//Path to a library.
+OPENSSL_CRYPTO_LIBRARY:FILEPATH=/opt/homebrew/lib/libcrypto.dylib
+
+//Path to a file.
+OPENSSL_INCLUDE_DIR:PATH=/opt/homebrew/include
+
+//Path to a library.
+OPENSSL_SSL_LIBRARY:FILEPATH=/opt/homebrew/lib/libssl.dylib
+
+//Arguments to supply to pkg-config
+PKG_CONFIG_ARGN:STRING=
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=PKG_CONFIG_EXECUTABLE-NOTFOUND
+
 //The directory containing a CMake configuration file for boost_headers.
 boost_headers_DIR:PATH=/opt/homebrew/lib/cmake/boost_headers-1.90.0
+
+//Path to a library.
+lib_path:FILEPATH=lib_path-NOTFOUND
+
+//Path to a library.
+lib_path_debug:FILEPATH=lib_path_debug-NOTFOUND
 
 //Value Computed by CMake
 optimumDaq_BINARY_DIR:STATIC=/Users/abhijeet777/Abhijeet/optimumDaq/build
@@ -233,6 +257,12 @@ optimumDaq_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 optimumDaq_SOURCE_DIR:STATIC=/Users/abhijeet777/Abhijeet/optimumDaq
+
+//Path to a library.
+ssl_crypto:FILEPATH=ssl_crypto-NOTFOUND
+
+//Path to a library.
+ssl_lib:FILEPATH=ssl_lib-NOTFOUND
 
 
 ########################
@@ -372,6 +402,84 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Boost
 FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/opt/homebrew/lib/cmake/Boost-1.90.0/BoostConfig.cmake][ ][v1.90.0()]
+//Details about finding OpenSSL
+FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/opt/homebrew/lib/libcrypto.dylib][/opt/homebrew/include][ ][v3.6.3()]
+//Details about finding mysql-concpp
+FIND_PACKAGE_MESSAGE_DETAILS_mysql-concpp:INTERNAL=[/opt/homebrew/Cellar/mysql-connector-c++/9.7.0/include][/opt/homebrew/Cellar/mysql-connector-c++/9.7.0/include][1][ ][v9.7.0()]
+//mysql-concpp module config variable
+MYSQL_CONCPP_DEBUG_FOUND:INTERNAL=0
+//mysql-concpp module config variable
+MYSQL_CONCPP_PLUGIN_DIR:INTERNAL=/opt/homebrew/Cellar/mysql-connector-c++/9.7.0/lib/plugin
+//mysql-concpp module config variable
+MYSQL_CONCPP_RELEASE_FOUND:INTERNAL=1
+//mysql-concpp module config variable
+MYSQL_CONCPP_ROOT_DIR:INTERNAL=/opt/homebrew/Cellar/mysql-connector-c++/9.7.0
+//mysql-concpp module config variable
+MYSQL_CONCPP_RUNTIME_LIBRARY_DIR:INTERNAL=/opt/homebrew/Cellar/mysql-connector-c++/9.7.0/lib
+//mysql-concpp module config variable
+MYSQL_CONCPP_RUNTIME_LIBRARY_DIRS:INTERNAL=/opt/homebrew/Cellar/mysql-connector-c++/9.7.0/lib
+//mysql-concpp module config variable
+MYSQL_CONCPP_RUNTIME_LIBRARY_DIRS_RELEASE:INTERNAL=/opt/homebrew/Cellar/mysql-connector-c++/9.7.0/lib
+//mysql-concpp module config variable
+MYSQL_CONCPP_RUNTIME_LIBRARY_DIR_RELEASE:INTERNAL=/opt/homebrew/Cellar/mysql-connector-c++/9.7.0/lib
+//mysql-concpp module config variable
+MYSQL_CONCPP_VERSION:INTERNAL=9.7.0
+//mysql-concpp module config variable
+MYSQL_CONCPP_VERSION_COUNT:INTERNAL=3
+//mysql-concpp module config variable
+MYSQL_CONCPP_VERSION_MAJOR:INTERNAL=9
+//mysql-concpp module config variable
+MYSQL_CONCPP_VERSION_MINOR:INTERNAL=7
+//mysql-concpp module config variable
+MYSQL_CONCPP_VERSION_PATCH:INTERNAL=0
+//mysql-concpp module config variable
+MYSQL_CONCPP_VERSION_TWEAK:INTERNAL=0
+//mysql-concpp module config variable
+MYSQL_CONCPP_debug_FOUND:INTERNAL=0
+//mysql-concpp module config variable
+MYSQL_CONCPP_release_FOUND:INTERNAL=1
+//ADVANCED property for variable: OPENSSL_CRYPTO_LIBRARY
+OPENSSL_CRYPTO_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENSSL_INCLUDE_DIR
+OPENSSL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENSSL_SSL_LIBRARY
+OPENSSL_SSL_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_ARGN
+PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: boost_headers_DIR
 boost_headers_DIR-ADVANCED:INTERNAL=1
+//mysql-concpp module config variable
+mysql-concpp_DEBUG_FOUND:INTERNAL=0
+//mysql-concpp module config variable
+mysql-concpp_PLUGIN_DIR:INTERNAL=/opt/homebrew/Cellar/mysql-connector-c++/9.7.0/lib/plugin
+//mysql-concpp module config variable
+mysql-concpp_RELEASE_FOUND:INTERNAL=1
+//mysql-concpp module config variable
+mysql-concpp_ROOT_DIR:INTERNAL=/opt/homebrew/Cellar/mysql-connector-c++/9.7.0
+//mysql-concpp module config variable
+mysql-concpp_RUNTIME_LIBRARY_DIR:INTERNAL=/opt/homebrew/Cellar/mysql-connector-c++/9.7.0/lib
+//mysql-concpp module config variable
+mysql-concpp_RUNTIME_LIBRARY_DIRS:INTERNAL=/opt/homebrew/Cellar/mysql-connector-c++/9.7.0/lib
+//mysql-concpp module config variable
+mysql-concpp_RUNTIME_LIBRARY_DIRS_RELEASE:INTERNAL=/opt/homebrew/Cellar/mysql-connector-c++/9.7.0/lib
+//mysql-concpp module config variable
+mysql-concpp_RUNTIME_LIBRARY_DIR_RELEASE:INTERNAL=/opt/homebrew/Cellar/mysql-connector-c++/9.7.0/lib
+//mysql-concpp module config variable
+mysql-concpp_VERSION:INTERNAL=9.7.0
+//mysql-concpp module config variable
+mysql-concpp_VERSION_COUNT:INTERNAL=3
+//mysql-concpp module config variable
+mysql-concpp_VERSION_MAJOR:INTERNAL=9
+//mysql-concpp module config variable
+mysql-concpp_VERSION_MINOR:INTERNAL=7
+//mysql-concpp module config variable
+mysql-concpp_VERSION_PATCH:INTERNAL=0
+//mysql-concpp module config variable
+mysql-concpp_VERSION_TWEAK:INTERNAL=0
+//mysql-concpp module config variable
+mysql-concpp_debug_FOUND:INTERNAL=0
+//mysql-concpp module config variable
+mysql-concpp_release_FOUND:INTERNAL=1
 

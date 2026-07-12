@@ -2,12 +2,32 @@
 
 #include <boost/beast/version.hpp>
 #include <nlohmann/json.hpp>
+#include <sstream>
 
 using json = nlohmann::json;
 namespace beast = boost::beast;
 namespace http = beast::http;
 using tcp = boost::asio::ip::tcp;
+std::vector<std::string>
+HttpSession::splitPath(
+    const std::string& path) const
+{
+    std::vector<std::string> parts;
 
+    std::stringstream stream(path);
+
+    std::string part;
+
+    while (std::getline(stream, part, '/'))
+    {
+        if (!part.empty())
+        {
+            parts.push_back(part);
+        }
+    }
+
+    return parts;
+}
 HttpSession::HttpSession(
     tcp::socket socket,
     Exchange& exchange)
@@ -48,6 +68,10 @@ void HttpSession::handleRequest()
 {
     response = {};
 
+    auto parts =
+        splitPath(
+            std::string(request.target()));
+
     response.version(request.version());
     response.set(http::field::server, "AegisX");
     response.set(http::field::content_type, "text/plain");
@@ -58,9 +82,13 @@ void HttpSession::handleRequest()
         handleGetRoot();
     }
     else if (request.method() == http::verb::post &&
-            request.target() == "/orders")
+             request.target() == "/orders")
     {
         handlePostOrders();
+    }
+    else if (request.method() == http::verb::delete_)
+    {
+        handleDeleteOrder(parts);
     }
     else
     {
@@ -72,7 +100,50 @@ void HttpSession::handleRequest()
 
     doWrite();
 }
+void HttpSession::handleDeleteOrder(
+        const std::vector<std::string>& parts)
+    {
+        response.set(
+            http::field::content_type,
+            "application/json");
 
+        if (parts.size() != 3 ||
+            parts[0] != "orders")
+        {
+            response.result(http::status::bad_request);
+            response.body() = R"({
+        "status":"error",
+        "message":"Invalid URL"
+    })";
+            return;
+        }
+
+        const std::string symbol = parts[1];
+
+        OrderId orderId =
+            std::stoll(parts[2]);
+
+        bool cancelled =
+            exchange.cancelOrder(
+                symbol,
+                orderId);
+
+        json result;
+
+        if (cancelled)
+        {
+            response.result(http::status::ok);
+            result["status"] = "cancelled";
+        }
+        else
+        {
+            response.result(http::status::not_found);
+            result["status"] = "not_found";
+        }
+
+        response.body() =
+                result.dump(4);
+}
 void HttpSession::doWrite()
 {
     auto self = shared_from_this();

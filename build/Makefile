@@ -142,6 +142,19 @@ optimumdaq_benchmark/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_benchmark.dir/build.make CMakeFiles/optimumdaq_benchmark.dir/build
 .PHONY : optimumdaq_benchmark/fast
 
+#=============================================================================
+# Target rules for targets named optimumdaq_client
+
+# Build rule for target.
+optimumdaq_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 optimumdaq_client
+.PHONY : optimumdaq_client
+
+# fast build rule for target.
+optimumdaq_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_client.dir/build.make CMakeFiles/optimumdaq_client.dir/build
+.PHONY : optimumdaq_client/fast
+
 src/MatchingEngine/MatchingEngine.o: src/MatchingEngine/MatchingEngine.cpp.o
 .PHONY : src/MatchingEngine/MatchingEngine.o
 
@@ -264,6 +277,54 @@ src/benchmark/main.s: src/benchmark/main.cpp.s
 src/benchmark/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_benchmark.dir/build.make CMakeFiles/optimumdaq_benchmark.dir/src/benchmark/main.cpp.s
 .PHONY : src/benchmark/main.cpp.s
+
+src/client/Client.o: src/client/Client.cpp.o
+.PHONY : src/client/Client.o
+
+# target to build an object file
+src/client/Client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_client.dir/build.make CMakeFiles/optimumdaq_client.dir/src/client/Client.cpp.o
+.PHONY : src/client/Client.cpp.o
+
+src/client/Client.i: src/client/Client.cpp.i
+.PHONY : src/client/Client.i
+
+# target to preprocess a source file
+src/client/Client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_client.dir/build.make CMakeFiles/optimumdaq_client.dir/src/client/Client.cpp.i
+.PHONY : src/client/Client.cpp.i
+
+src/client/Client.s: src/client/Client.cpp.s
+.PHONY : src/client/Client.s
+
+# target to generate assembly for a file
+src/client/Client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_client.dir/build.make CMakeFiles/optimumdaq_client.dir/src/client/Client.cpp.s
+.PHONY : src/client/Client.cpp.s
+
+src/client/main.o: src/client/main.cpp.o
+.PHONY : src/client/main.o
+
+# target to build an object file
+src/client/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_client.dir/build.make CMakeFiles/optimumdaq_client.dir/src/client/main.cpp.o
+.PHONY : src/client/main.cpp.o
+
+src/client/main.i: src/client/main.cpp.i
+.PHONY : src/client/main.i
+
+# target to preprocess a source file
+src/client/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_client.dir/build.make CMakeFiles/optimumdaq_client.dir/src/client/main.cpp.i
+.PHONY : src/client/main.cpp.i
+
+src/client/main.s: src/client/main.cpp.s
+.PHONY : src/client/main.s
+
+# target to generate assembly for a file
+src/client/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_client.dir/build.make CMakeFiles/optimumdaq_client.dir/src/client/main.cpp.s
+.PHONY : src/client/main.cpp.s
 
 src/engine/Exchange.o: src/engine/Exchange.cpp.o
 .PHONY : src/engine/Exchange.o
@@ -580,7 +641,6 @@ src/websocket/WebSocketSession.o: src/websocket/WebSocketSession.cpp.o
 # target to build an object file
 src/websocket/WebSocketSession.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq.dir/build.make CMakeFiles/optimumdaq.dir/src/websocket/WebSocketSession.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_benchmark.dir/build.make CMakeFiles/optimumdaq_benchmark.dir/src/websocket/WebSocketSession.cpp.o
 .PHONY : src/websocket/WebSocketSession.cpp.o
 
 src/websocket/WebSocketSession.i: src/websocket/WebSocketSession.cpp.i
@@ -589,7 +649,6 @@ src/websocket/WebSocketSession.i: src/websocket/WebSocketSession.cpp.i
 # target to preprocess a source file
 src/websocket/WebSocketSession.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq.dir/build.make CMakeFiles/optimumdaq.dir/src/websocket/WebSocketSession.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_benchmark.dir/build.make CMakeFiles/optimumdaq_benchmark.dir/src/websocket/WebSocketSession.cpp.i
 .PHONY : src/websocket/WebSocketSession.cpp.i
 
 src/websocket/WebSocketSession.s: src/websocket/WebSocketSession.cpp.s
@@ -598,7 +657,6 @@ src/websocket/WebSocketSession.s: src/websocket/WebSocketSession.cpp.s
 # target to generate assembly for a file
 src/websocket/WebSocketSession.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq.dir/build.make CMakeFiles/optimumdaq.dir/src/websocket/WebSocketSession.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_benchmark.dir/build.make CMakeFiles/optimumdaq_benchmark.dir/src/websocket/WebSocketSession.cpp.s
 .PHONY : src/websocket/WebSocketSession.cpp.s
 
 # Help Target
@@ -611,6 +669,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... optimumdaq"
 	@echo "... optimumdaq_benchmark"
+	@echo "... optimumdaq_client"
 	@echo "... src/MatchingEngine/MatchingEngine.o"
 	@echo "... src/MatchingEngine/MatchingEngine.i"
 	@echo "... src/MatchingEngine/MatchingEngine.s"
@@ -626,6 +685,12 @@ help:
 	@echo "... src/benchmark/main.o"
 	@echo "... src/benchmark/main.i"
 	@echo "... src/benchmark/main.s"
+	@echo "... src/client/Client.o"
+	@echo "... src/client/Client.i"
+	@echo "... src/client/Client.s"
+	@echo "... src/client/main.o"
+	@echo "... src/client/main.i"
+	@echo "... src/client/main.s"
 	@echo "... src/engine/Exchange.o"
 	@echo "... src/engine/Exchange.i"
 	@echo "... src/engine/Exchange.s"

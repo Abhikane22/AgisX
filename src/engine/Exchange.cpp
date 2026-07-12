@@ -1,7 +1,8 @@
 #include "Exchange.h"
 
 #include <stdexcept>
-
+#include "../marketdata/TradeDispatcher.h"
+#include "logging/Logger.h"
 // Exchange::Exchange() = default;
 
 MatchingEngine&
@@ -68,7 +69,16 @@ Exchange::placeOrder(
             engine.placeMarketOrder(
                 std::move(order));
     }
-
+    if (tradeDispatcher)
+    {
+        Logger::info(
+        "Trades to broadcast: " +
+        std::to_string(result.trades.size()));
+        for (const auto& trade : result.trades)
+        {
+            tradeDispatcher->broadcastTrade(trade);
+        }
+    }
     return result;
 }
 bool
@@ -142,4 +152,9 @@ Exchange::tradeHistory(
     }
 
     return engine->tradeHistory();
+}
+void Exchange::setTradeDispatcher(
+    TradeDispatcher* dispatcher)
+{
+    tradeDispatcher = dispatcher;
 }

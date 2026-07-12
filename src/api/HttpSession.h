@@ -1,11 +1,13 @@
 #pragma once
 
 #include <memory>
-
+#include <vector>
 #include <boost/asio.hpp>
 #include <boost/beast/core.hpp>
 #include <boost/beast/http.hpp>
 #include "engine/Exchange.h"
+
+
 class HttpSession :
     public std::enable_shared_from_this<HttpSession>
 {
@@ -14,6 +16,11 @@ public:
         boost::asio::ip::tcp::socket socket,Exchange& exchange);
 
     void start();
+    std::vector<std::string>
+        splitPath(
+            const std::string& path) const;
+    void handleDeleteOrder(
+    const std::vector<std::string>& parts);
 
 private:
     void doRead();

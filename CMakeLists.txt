@@ -9,8 +9,9 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(CMAKE_CXX_EXTENSIONS OFF)
-
 find_package(Boost REQUIRED)
+
+
 
 set(SOURCES
 
@@ -32,6 +33,12 @@ set(SOURCES
 
     src/api/HttpServer.cpp
     src/api/HttpSession.cpp
+
+    src/websocket/WebSocketServer.cpp
+    src/websocket/WebSocketSession.cpp
+
+    src/marketdata/TradeDispatcher.cpp
+
 )
 
 add_executable(
@@ -45,11 +52,7 @@ target_include_directories(
         src
 )
 
-target_link_libraries(
-    optimumdaq
-    PRIVATE
-        Boost::headers
-)
+
 set(TEST_SOURCES
 
     src/tests/TestRunner.cpp
@@ -92,6 +95,9 @@ set(BENCHMARK_SOURCES
     src/engine/Exchange.cpp
 
     src/logging/Logger.cpp
+
+    src/marketdata/TradeDispatcher.cpp
+    
 )
 add_executable(
     optimumdaq_benchmark
@@ -107,9 +113,32 @@ target_include_directories(
     PRIVATE
         src
 )
-
+target_link_libraries(
+    optimumdaq
+    PRIVATE
+        Boost::headers
+        
+       
+)
 # target_link_libraries(
 #     optimumdaq_client
 #     PRIVATE
 #         Boost::headers
 # )
+add_executable(
+    optimumdaq_client
+    src/client/main.cpp
+    src/client/Client.cpp
+)
+
+target_include_directories(
+    optimumdaq_client
+    PRIVATE
+        src
+)
+
+target_link_libraries(
+    optimumdaq_client
+    PRIVATE
+        Boost::headers
+)

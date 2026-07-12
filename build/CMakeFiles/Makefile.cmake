@@ -57,4 +57,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/optimumdaq.dir/DependInfo.cmake"
   "CMakeFiles/optimumdaq_benchmark.dir/DependInfo.cmake"
+  "CMakeFiles/optimumdaq_client.dir/DependInfo.cmake"
   )

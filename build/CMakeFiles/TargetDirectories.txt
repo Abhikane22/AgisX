@@ -1,4 +1,5 @@
 /Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles/optimumdaq.dir
 /Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles/optimumdaq_benchmark.dir
+/Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles/optimumdaq_client.dir
 /Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles/edit_cache.dir
 /Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles/rebuild_cache.dir

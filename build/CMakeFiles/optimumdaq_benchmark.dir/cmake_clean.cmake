@@ -19,8 +19,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/optimumdaq_benchmark.dir/src/orderbook/OrderBook.cpp.o.d"
   "CMakeFiles/optimumdaq_benchmark.dir/src/orderbook/Trade.cpp.o"
   "CMakeFiles/optimumdaq_benchmark.dir/src/orderbook/Trade.cpp.o.d"
-  "CMakeFiles/optimumdaq_benchmark.dir/src/websocket/WebSocketSession.cpp.o"
-  "CMakeFiles/optimumdaq_benchmark.dir/src/websocket/WebSocketSession.cpp.o.d"
   "optimumdaq_benchmark"
   "optimumdaq_benchmark.pdb"
 )

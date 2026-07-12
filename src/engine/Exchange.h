@@ -9,6 +9,7 @@
 #include "../orderbook/Order.h"
 #include "../orderbook/Trade.h"
 #include "OrderResult.h"
+class TradeDispatcher;
 class Exchange
 {
 public:
@@ -43,8 +44,15 @@ public:
     const std::vector<Trade>&
     tradeHistory(
         const std::string& symbol) const;
+    
+        void
+        setTradeDispatcher(
+            TradeDispatcher* dispatcher);
 private:
     OrderId nextOrderId = 1;
+private:
+
+    TradeDispatcher* tradeDispatcher = nullptr;
 private:
 
     // Creates a matching engine if one does not exist.

@@ -65,11 +65,13 @@ CMAKE_BINARY_DIR = /Users/abhijeet777/Abhijeet/optimumDaq/build
 # The main recursive "all" target.
 all: CMakeFiles/optimumdaq.dir/all
 all: CMakeFiles/optimumdaq_benchmark.dir/all
+all: CMakeFiles/optimumdaq_client.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/optimumdaq.dir/codegen
 codegen: CMakeFiles/optimumdaq_benchmark.dir/codegen
+codegen: CMakeFiles/optimumdaq_client.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -79,6 +81,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/optimumdaq.dir/clean
 clean: CMakeFiles/optimumdaq_benchmark.dir/clean
+clean: CMakeFiles/optimumdaq_client.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -120,12 +123,12 @@ CMakeFiles/optimumdaq.dir/clean:
 CMakeFiles/optimumdaq_benchmark.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_benchmark.dir/build.make CMakeFiles/optimumdaq_benchmark.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_benchmark.dir/build.make CMakeFiles/optimumdaq_benchmark.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles --progress-num=18,19,20,21,22,23,24,25,26,27,28,29 "Built target optimumdaq_benchmark"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles --progress-num=18,19,20,21,22,23,24,25,26,27,28 "Built target optimumdaq_benchmark"
 .PHONY : CMakeFiles/optimumdaq_benchmark.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/optimumdaq_benchmark.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/optimumdaq_benchmark.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles 0
 .PHONY : CMakeFiles/optimumdaq_benchmark.dir/rule
@@ -137,13 +140,45 @@ optimumdaq_benchmark: CMakeFiles/optimumdaq_benchmark.dir/rule
 # codegen rule for target.
 CMakeFiles/optimumdaq_benchmark.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_benchmark.dir/build.make CMakeFiles/optimumdaq_benchmark.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles --progress-num=18,19,20,21,22,23,24,25,26,27,28,29 "Finished codegen for target optimumdaq_benchmark"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles --progress-num=18,19,20,21,22,23,24,25,26,27,28 "Finished codegen for target optimumdaq_benchmark"
 .PHONY : CMakeFiles/optimumdaq_benchmark.dir/codegen
 
 # clean rule for target.
 CMakeFiles/optimumdaq_benchmark.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_benchmark.dir/build.make CMakeFiles/optimumdaq_benchmark.dir/clean
 .PHONY : CMakeFiles/optimumdaq_benchmark.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/optimumdaq_client.dir
+
+# All Build rule for target.
+CMakeFiles/optimumdaq_client.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_client.dir/build.make CMakeFiles/optimumdaq_client.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_client.dir/build.make CMakeFiles/optimumdaq_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles --progress-num=29,30,31 "Built target optimumdaq_client"
+.PHONY : CMakeFiles/optimumdaq_client.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/optimumdaq_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/optimumdaq_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles 0
+.PHONY : CMakeFiles/optimumdaq_client.dir/rule
+
+# Convenience name for target.
+optimumdaq_client: CMakeFiles/optimumdaq_client.dir/rule
+.PHONY : optimumdaq_client
+
+# codegen rule for target.
+CMakeFiles/optimumdaq_client.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_client.dir/build.make CMakeFiles/optimumdaq_client.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/abhijeet777/Abhijeet/optimumDaq/build/CMakeFiles --progress-num=29,30,31 "Finished codegen for target optimumdaq_client"
+.PHONY : CMakeFiles/optimumdaq_client.dir/codegen
+
+# clean rule for target.
+CMakeFiles/optimumdaq_client.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/optimumdaq_client.dir/build.make CMakeFiles/optimumdaq_client.dir/clean
+.PHONY : CMakeFiles/optimumdaq_client.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
